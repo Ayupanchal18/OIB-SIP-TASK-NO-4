@@ -1,0 +1,774 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:opsz@6..12&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Work+Sans:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  height: 70px;
+  position: sticky;
+  align-items: center;
+  top: 0;
+  display: flex;
+  width: 100vw;
+  justify-content: flex-start;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  z-index: 1020;
+}
+
+.left_Div {
+  width: 50%;
+}
+.left_Div img {
+  height: 70px;
+}
+.rightdiv {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.links_div {
+  display: flex;
+  justify-content: space-around;
+}
+.links_div ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.links_div ul a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+}
+.links_div ul a:hover {
+  cursor: pointer;
+  color: #2bc5d4;
+}
+.links_div ul a li {
+  list-style: none;
+}
+.dropdown_Menu {
+  visibility: hidden;
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+  border: 0px solid;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  align-items: center;
+  top: 30px;
+  text-align: start;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.dropdown_Menu a {
+  font-size: 13px !important;
+  font-weight: 300;
+}
+.contact_button_div a button {
+  height: 70px;
+  border: 0;
+  background-color: #2bc5d4;
+  color: white;
+  font-size: medium;
+  padding: 1rem;
+  width: 250px;
+}
+
+.dropdown_ourTeam_div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.dropdown_ourTeam_div:hover .dropdown_Menu {
+  visibility: visible;
+  transition: 0.5s;
+  opacity: 1;
+}
+
+/* Hero Section CSS */
+.heroSection {
+  position: relative;
+  width: 100vw;
+  margin: auto;
+  display: inline-block;
+}
+.heroSection img {
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.HS_Container {
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  /* background-color: #000000; */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  text-align: start;
+}
+
+.top_Container h1 span {
+  color: orangered;
+}
+.top_Container h1 {
+  font-size: 65px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.top_Container h2 {
+  color: #2bc5d4;
+  font-size: 35px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.top_Container p {
+  font-size: 20px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.bottom_Div button {
+  margin-top: 10px;
+  color: white;
+  font-weight: lighter;
+  font-size: smaller;
+  border: 0;
+  border-radius: 3px;
+  background-color: #2bc5d4;
+  padding: 15px 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Service Crad */
+
+.service_Continer {
+  width: 100vw;
+}
+.I_title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 250px;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.title_div {
+  text-align: center;
+  margin: 20px 0px;
+}
+.title_div h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: xx-large;
+}
+.title_div h3 {
+  font-family: "Lato", sans-serif;
+  color: #2bc5d4;
+}
+.card_Div {
+  display: flex;
+  justify-content: space-between;
+}
+.Service_Cards_Div {
+  width: 80%;
+  margin: auto;
+}
+
+.ind_card {
+  text-align: center;
+  padding: 2rem 3rem;
+  height: 300px;
+  width: 300px;
+  background-color: #e7f9fb;
+  border-radius: 4px;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  transition: 0.5s;
+}
+.ind_card:hover {
+  background-color: #2bc5d4;
+  color: white;
+  cursor: pointer;
+  margin-top: -10px;
+}
+.ind_card:hover .ind_card i {
+  color: white;
+}
+.ind_card h3 {
+  margin-top: 15px;
+  font-family: "Lato", sans-serif;
+}
+.ind_card p {
+  margin-top: 15px;
+  font-family: "Lato", sans-serif;
+}
+.explore_all_Div {
+  width: 80%;
+  margin: auto;
+  background-color: #2bc5d4;
+  color: white;
+  /* padding: 10px; */
+  margin-top: 20px;
+  border-radius: 2px;
+  border: 0;
+  height: 60px;
+  transition: 0.5s;
+}
+.explore_all_Div:hover {
+  cursor: pointer;
+  background-color: #0be6fafb;
+}
+.explore_all_Div h1 {
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  text-align: center;
+  padding: 15px 0px;
+}
+
+.About_Container {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+}
+.Img_Abou_Box_Div_right {
+  width: 65%;
+}
+.Img_Abou_Box_Div_Left {
+  width: 35%;
+}
+.Img_Abou_Box_Div_Left img {
+  height: 400px;
+}
+.Img_Abou_Box_Div_right h6 {
+  font-size: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #2bc5d4;
+}
+.Img_Abou_Box_Div_right h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2.5rem;
+}
+.Img_Abou_Box_Div_right p {
+  font-family: "Comfortaa", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.Img_Abou_Box_Div_right div h4 {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #2bc5d4;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 25px;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+.Img_Abou_Box_Div_right div h4:hover {
+  background-color: #17d2e3;
+}
+.Img_Abou_Box_Div_right h4 a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Cource CSS */
+.Course_Container {
+  width: 80vw;
+  margin: auto;
+  margin-top: 50px;
+}
+.Course_Div {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  margin-bottom: 50px;
+}
+.Course_title h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Course_title h3 {
+  font-family: "Nunito Sans", sans-serif;
+}
+.Corse_img {
+  position: relative;
+  transition: 0.5s;
+}
+.Hover_Btns {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Hover_Btns a {
+  color: white;
+  background-color: #2bc5d4;
+  border-radius: 30px 0 0 30px;
+  padding: 6px 14px;
+  text-decoration: none;
+  font-size: small;
+  font-family: "Nunito Sans", sans-serif;
+}
+.Hover_Btns a:nth-child(2) {
+  border-radius: 0 30px 30px 0;
+}
+
+.Corse_img img {
+  height: 250px;
+}
+.Img_card {
+  transition: transform 0.5s;
+}
+.Img_card:hover {
+  transform: scale(1.05);
+}
+.course_card {
+  overflow: hidden;
+  width: 375px;
+  /* height: 450px; */
+  background-color: #e5fbfd;
+  text-align: center;
+  border: 0;
+  border-radius: 3px;
+}
+.Card_btns_Section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+.Card_btns_Section button {
+  background-color: #2bc5d4;
+  padding: 0.3rem;
+  width: 80px;
+  height: 35px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+.Card_btns_Section button:hover {
+  background-color: #47d1de;
+  cursor: pointer;
+}
+.Course_Disc {
+  padding: 0.8rem;
+}
+
+.Course_Disc h2 {
+  font-size: 1.1rem;
+  font-family: "Nunito Sans", sans-serif;
+  margin-block: 10px;
+  text-align: center;
+  line-break: auto;
+}
+
+.Course_Disc h3 {
+  font-family: "Nunito Sans", sans-serif;
+  margin-top: 10px;
+}
+.Card_btns_Section div i {
+  margin-right: 8px;
+}
+.Card_btns_Section div {
+  font-family: "Nunito Sans", sans-serif;
+  /* border-right: 1px solid gray; */
+}
+.Card_btns_Section div:hover {
+  text-decoration: underline;
+}
+/* Team Section CSS */
+
+.Team_Container {
+  width: 80vw;
+  margin: auto;
+  margin-block: 50px;
+}
+.team_Card_Div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.img_card_div img {
+  width: 250px;
+  transition: transform 0.5s;
+}
+.img_card_div img:hover {
+  transform: scale(1.03);
+}
+.img_card_div {
+  position: relative;
+}
+.card_Social_btn {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d5f6f9;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.team_title_Div {
+  display: flex;
+  justify-content: center;
+}
+.team_title {
+  text-align: center;
+  margin: 40px 0px;
+}
+.Person_card {
+  background-color: #d5f6f9;
+  border: 0;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
+  overflow: hidden;
+}
+.person_Disc {
+  padding: 0.8rem;
+}
+.person_Disc h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+}
+.person_Disc h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+}
+
+.team_title_Div h3 {
+  font-family: "Lato", sans-serif;
+}
+.team_title h1 {
+  font-family: "Nunito Sans", sans-serif;
+}
+/* CRSL CSS */
+
+.crsl_div {
+  display: flex;
+  justify-content: space-around;
+}
+.Corsolu_Container {
+  width: 80vw;
+  margin: auto;
+  margin-block: 50px;
+  /* height: 100vh; */
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 20%;
+}
+
+.Review_title {
+  text-align: center;
+  margin-block: 20px;
+}
+.Review_title h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: xx-large;
+}
+.Review_title_Div {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+}
+.Review_title_Div h3 {
+  font-family: "Lato", sans-serif;
+  font-size: medium;
+}
+.swiper-slide h5 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: larger;
+}
+.swiper-slide p {
+  font-family: "Lato", sans-serif;
+  font-size: medium;
+}
+.review_para {
+  background-color: #2bc5d4;
+  border: 0;
+  padding: 0.8rem;
+  width: 450px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 20px;
+}
+.review_para p {
+  font-size: large;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* FOOTER CSS */
+
+.Footer {
+  width: 100vw;
+  background-color: #181d38;
+  /* height: 450px; */
+  padding: 20px 0px;
+  color: white;
+}
+.div_top_footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 250px;
+}
+
+.Left_top_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links_div_list:nth-child(1) {
+  margin-right: 100px;
+}
+.links_div_list ul a {
+  color: white;
+  font-size: large;
+  line-height: 30px;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  list-style: none;
+}
+.links_div_list ul a li {
+  font-weight: 500;
+  font-size: 16px;
+}
+.links_div_list ul a li i {
+  margin-right: 5px;
+}
+.links_div_list ul h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.links_div_list li {
+  color: white;
+  font-size: large;
+  line-height: 30px;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  list-style: none;
+}
+.links_div_list li i {
+  margin-right: 5px;
+}
+.bottom_div_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  /* border-top: 1px solid gray; */
+  align-items: center;
+  height: 50px;
+}
+.right_Bottom_Div ul {
+  display: flex;
+  color: white;
+}
+.right_Bottom_Div ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+.left_Bottom_Div {
+  color: white;
+}
+.div_Right-top h3 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 25px;
+}
+.div_Right-top p {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  margin-block: 15px;
+  font-weight: 500;
+}
+.div_Right-top input {
+  width: 250px;
+  height: 50px;
+  color: black;
+  padding: 0.5rem;
+  font-size: 16px;
+}
+.div_Right-top input:focus {
+  outline: none;
+}
+.div_Right-top button {
+  height: 50px;
+  width: 110px;
+  background-color: #2bc5d4;
+  color: white;
+  font-size: medium;
+}
+
+/* Contact Form CSS */
+.right_Divform {
+}
+.right_Divform input {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  height: 50px;
+  width: 800px;
+  margin-bottom: 15px;
+}
+.right_Divform button {
+  width: 800px;
+  height: 50px;
+  background-color: #17d2e3;
+  padding: 0.5rem;
+  color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+.right_Divform button:hover {
+  background-color: #91e6ed;
+  cursor: pointer;
+}
+.right_Divform input:focus {
+  outline: none;
+}
+.right_Divform textarea {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  width: 800px;
+}
+.mainLeftRight_Div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Contact_Container {
+  width: 100vw;
+  margin-block: 30px;
+  padding: 50px;
+}
+.Contect_title {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  margin-block: 20px;
+}
+
+.Contect_title h1 {
+  font-size: xx-large;
+  font-weight: 600 !important;
+}
+.left-Div {
+  width: 40%;
+  padding: 50px;
+  line-height: 35px;
+  font-family: "Work Sans", sans-serif;
+}
+.right_Divform {
+  width: 60%;
+}
+.Contect_title_Div {
+  display: flex;
+  justify-content: center;
+}
+.Contect_title_Div h3 {
+  font-size: large;
+  color: #2bc5d4;
+}
+
+.Address_Div h3 i {
+  margin-right: 5px;
+}
+.left-Div h2 {
+  font-family: "Work Sans", sans-serif;
+}
+/* .left-Div p {
+  font-family: "Nunito Sans", sans-serif;
+} */
+.Address_Div h3 {
+  font-size: 14px;
+}
